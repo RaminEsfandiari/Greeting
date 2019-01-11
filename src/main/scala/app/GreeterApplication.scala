@@ -2,7 +2,7 @@ package app
 
 import scala.io.StdIn
 
-object GreeterApplication extends App {
+object GreeterApplication {
 
   def greet(name : String) : Unit = {
 
