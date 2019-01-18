@@ -1,26 +1,31 @@
 package app
 
-import scala.io.StdIn
 
-object GreeterApplication {
+object GreeterApplication extends App {
 
-  def greet(name : String) : Unit = {
+    val raminsSavingsAccount = new SavingsAccount("12334", 3000.4,1.2,"Ramin")
+    val bonniesSavingsAccount = new SavingsAccount("12335", 5000.4,1.2,"Bonnie")
+    val brendansSavingsAccount = new SavingsAccount("12336", 7000.4,1.2,"Brendan")
 
-    if (name == "adam") {
-      println(s"You don't get a hello!")
-    }
+    val x = raminsSavingsAccount.withdraw(100)
+    val y = bonniesSavingsAccount.withdraw(200)
+    val z = brendansSavingsAccount.withdraw(500)
 
-    else if(name.startsWith("a") && name.endsWith("w") ) {
-      println(s"Ey you Mr/Mrs/etc\n$name")
-    }
-
-    else {
-      println(s"Hello $name")
-    }
-  }
-
-  val name = StdIn.readLine("What is your name?\n")
-  greet(name)
+    println(x.balance)
+    println(y.balance)
+    println(z.balance)
 
 }
+
+
+
+
+
+
+
+
+
+
+//    val paypalAccount = new BankAccount() //reduce by 5% on withdraw
+//    val isaAccount = new ISAAccount() // deposit limit and no withdraw function
 

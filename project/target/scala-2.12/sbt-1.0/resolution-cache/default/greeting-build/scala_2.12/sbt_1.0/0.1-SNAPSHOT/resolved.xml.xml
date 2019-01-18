@@ -4,7 +4,7 @@
 		module="greeting-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20190111141838"
+		publication="20190111151946"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
